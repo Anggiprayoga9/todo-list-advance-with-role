@@ -54,26 +54,30 @@ cd nama-folder-proyek
 ```
 
 ### 2. Edit Environment
+```bash
 cp .env.example .env
 php artisan key:generate
+```
 
 #### Edit .env databasase
+```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=laravel_todo
 DB_USERNAME=root
 DB_PASSWORD=
+```
 
 ### 3. Instalasi Dependensi
+```bash
 composer install
 php artisan migrate --seed
+```
 
 #### admin account:
-
 username/email:
 admin@example.com
-
 password:
 password
 
@@ -90,20 +94,22 @@ anggi123
 
 Import database terlebih dahulu untuk menggunakan data user.
 Untuk user bisa juga resgistrasi akun terlebih dahulu, dengan catatan harus set up bagian berikut di .env seperti berikut:
-
+```bash
 MAIL_MAILER=smtp
 MAIL_SCHEME=null
 MAIL_HOST=sandbox.smtp.mailtrap.io (contoh menggunakan mailtrap untuk testing email)
 MAIL_PORT=2525
 MAIL_USERNAME=xxxxxxxxx
 MAIL_PASSWORD=xxxxxxxx
+```
 
 jika sudah jalankan aplikasi dan mulai registrasi akun user.
 
 #### Next Step for Start The App
+```bash
 npm install
 npm run dev
 php artisan serve
-
+```
 
 Aplikasi kini dapat diakses di http://127.0.0.1:8000
